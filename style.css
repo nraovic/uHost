@@ -56,7 +56,7 @@ a:focus {
 
 .img-text {
   height: 600px;
-  background: url('freedom6.jpg') center;
+  background: url('img/freedom6.jpg') center;
   background-size: 130% auto;
   position: relative;
 }
