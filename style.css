@@ -1,0 +1,74 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #071e22;
+}
+ul,
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+/*** INDEX PAGE ***/
+
+/*** Navigation ***/
+.navigation {
+  background-color: #094d92;
+  font-weight: 600;
+  padding: 12px 0;
+}
+.nav-home {
+  font-size: 26px;
+  margin-left: 20px;
+  font-weight: 700;
+  color: #d8dbe2;
+}
+.nav-links,
+.nav-link {
+  display: inline-block;
+}
+.nav-links {
+  width: 90%;
+  text-align: right;
+  color: #58a4b0;
+}
+.nav-link {
+  padding-right: 20px;
+  font-size: 20px;
+}
+.hosting {
+  padding: 5px 10px;
+  background-color: #d8dbe2;
+  border-radius: 7px;
+  color: #071e22;
+}
+/*** Main Section ***/
+
+.img-text {
+  height: 600px;
+  background: url('freedom6.jpg') center;
+  background-size: 130% auto;
+  position: relative;
+}
+.text-msg {
+  position: absolute;
+  top: 35%;
+  left: 150px;
+  color: #071e22;
+  font-size: 46px;
+  font-family: 'Anton', sans-serif;
+}
+.plans {
+  background-color: #58a4b0;
+  height: 300px;
+}
