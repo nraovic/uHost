@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
@@ -11,6 +14,13 @@ a {
   list-style-type: none;
   text-decoration: none;
   color: inherit;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -68,7 +78,28 @@ a:focus {
   font-size: 46px;
   font-family: 'Anton', sans-serif;
 }
-.plans {
+.packages {
   background-color: #58a4b0;
-  height: 300px;
+  padding-top: 20px;
+}
+.packages-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+.packages-list {
+  text-align: center;
+}
+.package {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #d8dbe2;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+  width: 350px;
+}
+.plus {
+  background-color: #094d92;
+  color: #d8dbe2;
 }
