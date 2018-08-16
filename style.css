@@ -32,30 +32,36 @@ a:focus {
 /*** INDEX PAGE ***/
 
 /*** Navigation ***/
-.navigation {
+.main-header {
   background-color: #094d92;
   font-weight: 600;
-  padding: 12px 0;
+  padding: 12px 20px;
 }
-.nav-home {
+
+.home-title {
   font-size: 26px;
-  margin-left: 20px;
   font-weight: 700;
   color: #d8dbe2;
 }
-.nav-links,
-.nav-link {
+.navigation {
+  text-align: right;
+}
+.navigation,
+.nav-link,
+.home-title {
   display: inline-block;
 }
+.navigation {
+  width: calc(100% - 90px);
+}
 .nav-links {
-  width: 90%;
-  text-align: right;
   color: #58a4b0;
 }
 .nav-link {
   padding-right: 20px;
   font-size: 20px;
 }
+
 .hosting {
   padding: 5px 10px;
   background-color: #d8dbe2;
