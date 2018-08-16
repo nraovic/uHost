@@ -148,3 +148,18 @@ a:focus {
 .feature-text {
   font-weight: bold;
 }
+
+/*** Footer ***/
+footer {
+  background-color: #071e22;
+  text-align: center;
+  padding: 20px 0;
+}
+footer a {
+  color: #cacbce;
+  font-size: 22px;
+}
+
+footer a:first-child {
+  margin-right: 20px;
+}
