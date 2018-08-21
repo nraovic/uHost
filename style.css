@@ -76,8 +76,7 @@ a:focus {
 .img-text {
   margin-top: 62px;
   height: 600px;
-  background: url('img/freedom6.jpg') center;
-  background-size: 130% auto;
+  background: url('img/freedom6.jpg') right bottom 40% / cover border-box;
 }
 .text-msg {
   padding-top: 50px;
