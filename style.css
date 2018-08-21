@@ -36,6 +36,9 @@ a:focus {
   background-color: #094d92;
   font-weight: 600;
   padding: 12px 20px;
+  position: fixed;
+  top: 0%;
+  width: 100%;
 }
 
 .home-title {
@@ -71,15 +74,14 @@ a:focus {
 /*** Main Section ***/
 
 .img-text {
+  margin-top: 62px;
   height: 600px;
   background: url('img/freedom6.jpg') center;
   background-size: 130% auto;
-  position: relative;
 }
 .text-msg {
-  position: absolute;
-  top: 35%;
-  left: 150px;
+  padding-top: 50px;
+  padding-left: 150px;
   color: #071e22;
   font-size: 46px;
   font-family: 'Anton', sans-serif;
@@ -94,6 +96,7 @@ a:focus {
   font-size: 26px;
   color: #d8dbe2;
 }
+
 .package {
   padding: 20px 0;
   display: inline-block;
@@ -168,4 +171,27 @@ footer a {
 
 footer a:first-child {
   margin-right: 20px;
+}
+
+/*** Packages Page ***/
+.background {
+  background: url(img/background.jpeg);
+}
+.deals-main {
+  padding-top: 82px;
+}
+.deal {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #071e22;
+  position: relative;
+}
+.deal-badge {
+  position: absolute;
+  background-color: #ed6625;
+  padding: 5px;
+  color: #d8dbe2;
+  top: 20px;
+  right: 20px;
+  margin-bottom: 20px;
 }
