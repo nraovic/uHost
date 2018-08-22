@@ -1,0 +1,35 @@
+.customer-testimonial {
+  padding-top: 82px;
+  padding-bottom: 20px;
+}
+.img-container {
+  width: 60%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.img-container img {
+  width: 100%;
+  vertical-align: top;
+}
+.customer-info {
+  width: 39%;
+  padding: 0 30px;
+  color: #ed6625;
+}
+.img-container,
+.customer-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+.customer-name {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.customer-info h2 {
+  font-size: 20px;
+  color: #858585;
+  font-weight: bold;
+}
+.customer-info p {
+  font-size: 28px;
+  color: #071e22;
+}
