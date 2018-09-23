@@ -30,7 +30,66 @@ a:focus {
   text-decoration: none;
 }
 /*** INDEX PAGE ***/
+#backdrop {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+}
 
+/***Modal***/
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
 /*** Navigation ***/
 .main-header {
   background-color: #094d92;
@@ -42,7 +101,7 @@ a:focus {
 }
 
 .home-title {
-  font-size: 26px;
+  font-size: 1.5em;
   font-weight: 700;
   color: #d8dbe2;
 }
@@ -67,7 +126,7 @@ a:focus {
 }
 .nav-link {
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 .hosting {
@@ -80,8 +139,8 @@ a:focus {
 
 .img-text {
   margin-top: 62px;
-  height: 600px;
-  background: url('img/freedom6.jpg') right bottom 40% / cover border-box, #071e22;
+  height: 60vh;
+  background: url('img/freedom6.jpg') right bottom 60% / cover border-box, #071e22;
 }
 .text-msg {
   padding-top: 50px;
@@ -91,13 +150,13 @@ a:focus {
   font-family: 'Anton', sans-serif;
 }
 .packages {
-  background-color: #ed6625;
+  background: linear-gradient(#ed6625, #858585);
   padding: 20px 0;
   text-align: center;
 }
 .packages-title {
   margin-bottom: 20px;
-  font-size: 26px;
+  font-size: 1.5em;
   color: #d8dbe2;
 }
 
@@ -149,6 +208,7 @@ a:focus {
   height: 200px;
   border-radius: 50%;
   background-color: #ed6625;
+  padding: 40px;
 }
 .feature {
   display: inline-block;
@@ -170,7 +230,7 @@ footer {
 }
 footer a {
   color: #cacbce;
-  font-size: 22px;
+  font-size: 1.3em;
 }
 
 footer a:first-child {
@@ -179,7 +239,13 @@ footer a:first-child {
 
 /*** Packages Page ***/
 .background {
-  background: url(img/background.jpeg);
+  background: url(img/plans-background.jpg) center / cover;
+  filter: grayscale(20%);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  overflow: auto;
 }
 .deals-main {
   padding-top: 82px;
@@ -189,6 +255,27 @@ footer a:first-child {
   padding: 20px;
   border: 1px solid #071e22;
   position: relative;
+  background: rgba(200, 200, 200, 0.9);
+  width: 70%;
+}
+.deal-title {
+  color: #ed6625;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.deal-description {
+  font-size: 1.2em;
+  color: #094d92;
+  font-weight: bold;
+}
+.deal-offer {
+  font-size: 1.4em;
+}
+.free {
+  float: right;
+}
+.premium {
+  clear: both;
 }
 .deal-badge {
   position: absolute;
