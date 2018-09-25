@@ -12,58 +12,85 @@
 </head>
 
 <body>
-    <div class="background">
-        <header class="main-header">
-            <div class="home-title">
-                <a href="index.html"><img src="img/uhost-icon.png" alt="uHost icon"></a>
-            </div>
-            <nav class="navigation">
-                <ul class="nav-links">
-                    <li class="nav-link">
-                        <a href="packages.html">Packages</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="customers/customers.html">Customers</a>
-                    </li>
-                    <li class="nav-link hosting">
-                        <a href="hosting.html">Start Hosting</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="deals-main">
-            <a href="#">
-                <section class="deal">
-                    <h3 class="deal-title">Our PLUS Plan</h3>
-                    <h3 class="deal-badge">RECOMMENDED</h3>
-                    <p class="deal-description">The most popular choice of our customers</p>
-                    <p class="deal-offer">Benefit from increased storage and faster support to ensure that your mission-critical data and applications
-                        are always available!</p>
-                </section>
-            </a>
-            <a href="#">
-                <section class="deal free">
-                    <h3 class="deal-title">Our FREE Plan</h3>
-                    <p class="deal-description">An extremely solid start into our hosting world.</p>
-                    <p class="deal-offer">Get started immediately at zero cost!</p>
-                </section>
-            </a>
-            <a href="#">
-                <section class="deal premium">
-                    <h3 class="deal-title">Our PREMIUM Plan</h3>
-                    <p class="deal-description">All your enterprise needs. Instant support, guaranteed uptime.</p>
-                    <p class="deal-offer">The best solution for small to large enterprises. Because hosting shouldn't be in the way!</p>
-                </section>
-            </a>
-
-
-        </main>
-        <footer>
-            <a href="#">Support</a>
-            <a href="#">Terms of Use</a>
-        </footer>
+    <div id="backdrop"></div>
+    <div class="modal" id="modal">
+        <h1 class="modal__title">Do you want to continue?</h1>
+        <div class="modal__actions">
+            <a href="start-hosting/index.html" class="modal__action">Yes!</a>
+            <button class="modal__action modal__action--negative" type="button">No!</button>
+        </div>
     </div>
-    <script src="" async defer></script>
+    <header class="main-header">
+        <button class="toggle-button">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+        </button>
+        <div class="home-title">
+            <a href="index.html"><img src="img/uhost-icon.png" alt="uHost icon"></a>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="packages.html">Packages</a>
+                </li>
+                <li class="nav-link">
+                    <a href="customers/customers.html">Customers</a>
+                </li>
+                <li class="nav-link hosting">
+                    <a href="hosting.html">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="packages.html">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="customers/customers.html">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="index.html">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="deals-main">
+        <a href="#">
+            <section class="deal">
+                <h3 class="deal-title">Our PLUS Plan</h3>
+                <h3 class="deal-badge">RECOMMENDED</h3>
+                <p class="deal-description">The most popular choice of our customers</p>
+                <p class="deal-offer">Benefit from increased storage and faster support to ensure that your mission-critical
+                    data and applications are always available!</p>
+            </section>
+        </a>
+        <a href="#">
+            <section class="deal free">
+                <h3 class="deal-title">Our FREE Plan</h3>
+                <p class="deal-description">An extremely solid start into our hosting world.</p>
+                <p class="deal-offer">Get started immediately at zero cost!</p>
+            </section>
+        </a>
+        <a href="#">
+            <section class="deal premium">
+                <h3 class="deal-title">Our PREMIUM Plan</h3>
+                <p class="deal-description">All your enterprise needs. Instant support, guaranteed uptime.</p>
+                <p class="deal-offer">The best solution for small to large enterprises. Because hosting shouldn't be in the
+                    way!
+                </p>
+            </section>
+        </a>
+
+
+    </main>
+    <footer>
+        <a href="#">Support</a>
+        <a href="#">Terms of Use</a>
+    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
