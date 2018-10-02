@@ -204,8 +204,8 @@ a:focus {
   background: url('img/freedom6.jpg') right bottom 60% / cover border-box, #071e22;
 }
 .text-msg {
-  padding-top: 50px;
-  padding-left: 150px;
+  padding-top: 5%;
+  padding-left: 14%;
   color: #071e22;
   font-size: 46px;
   font-family: 'Anton', sans-serif;
@@ -349,4 +349,43 @@ footer a:first-child {
 }
 .open {
   display: block !important;
+}
+
+@media (max-width: 1170px) {
+  .package {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .feature {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .nav-links {
+    display: none;
+  }
+  .text-msg {
+    font-size: 36px;
+  }
+  .package {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .feature {
+    width: 100%;
+  }
+  .feature-img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+  }
 }
