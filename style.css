@@ -97,6 +97,7 @@ a:focus {
   font-weight: 600;
   padding: 12px 20px;
   position: fixed;
+  z-index: 10;
   top: 0%;
   width: 100%;
 }
@@ -302,15 +303,12 @@ footer a:first-child {
 .background {
   background: url(img/plans-background.jpg) center / cover;
   filter: grayscale(20%);
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  z-index: -1;
   overflow: auto;
 }
 .deals-main {
   padding-top: 82px;
 }
+
 .deal {
   margin: 20px;
   padding: 20px;
@@ -320,6 +318,7 @@ footer a:first-child {
   width: 70%;
 }
 .deal-title {
+  clear: both;
   color: #ed6625;
   font-weight: bold;
   text-transform: uppercase;
@@ -339,13 +338,10 @@ footer a:first-child {
   clear: both;
 }
 .deal-badge {
-  position: absolute;
   background-color: #ed6625;
   padding: 5px;
   color: #d8dbe2;
-  top: 20px;
-  right: 20px;
-  margin-bottom: 20px;
+  float: right;
 }
 .open {
   display: block !important;
@@ -364,13 +360,14 @@ footer a:first-child {
   .feature {
     width: 100%;
   }
-}
-@media (max-width: 425px) {
   .nav-links {
     display: none;
   }
+}
+@media (max-width: 426px) {
   .text-msg {
-    font-size: 36px;
+    font-size: 32px;
+    height: 40vh;
   }
   .package {
     width: 100%;
